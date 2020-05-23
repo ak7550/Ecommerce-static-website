@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import HeroSection from '../components/reusable/HeroSection';
 import InfoBlock from '../components/reusable/Infoblock';
 import DualInfoBlock from '../components/reusable/DualInfoblock';
-import TeamPhotoSectiom from '../components/About/TeamPhotoSection';
 
 
 const ServicePage = ({ data }) => (
