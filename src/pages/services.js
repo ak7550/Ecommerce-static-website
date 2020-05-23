@@ -9,24 +9,23 @@ import DualInfoBlock from '../components/reusable/DualInfoblock';
 import TeamPhotoSectiom from '../components/About/TeamPhotoSection';
 
 
-const AboutPage = ({ data }) => (
+const ServicePage = ({ data }) => (
     <Layout>
         <SEO title="About" />
         <HeroSection
             img={data.img.childImageSharp.fluid}
             title="My first project on react"
-            subtitle="It's about section"
-            heroclass="about-background"
+            subtitle="It's services section"
+            heroclass="hero-background"
         />
-        <DualInfoBlock heading="A message from CEO" imageSource="https://images.pexels.com/photos/3826670/pexels-photo-3826670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-        <InfoBlock heading="About Vision" />
-        <TeamPhotoSectiom />
+        <DualInfoBlock heading="We provide" imageSource="https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+        <InfoBlock heading="Our services" />
     </Layout>
 )
 
 export const query = graphql`
 {
-  img: file(relativePath: {eq: "about.png"}) {
+  img: file(relativePath: {eq: "services.png"}) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG
@@ -36,4 +35,4 @@ export const query = graphql`
 }
 `
 
-export default AboutPage
+export default ServicePage
