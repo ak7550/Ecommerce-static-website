@@ -8,5 +8,21 @@
 }
 
 .hero-background{
-  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+}
+.about-background{
+  min-height: 3 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+}
+
+.btn-warning{
+  padding: 8px 35px;
+  /* color: white; */
 }
