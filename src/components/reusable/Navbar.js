@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import logo from '../../images/gatsby-icon.png';
 import { FaCartArrowDown } from 'react-icons/fa';
 
+
 export default class Navbar extends Component {
 
     state = {
@@ -54,7 +55,7 @@ export default class Navbar extends Component {
                     <ul className="navbar-nav ml-auto mr-5">
                         {this.state.menus.map(menu => (
                             <li className="nav-item">
-                                <Link to="/" key={menu.id} className="nav-link text-white">
+                                <Link to={menu.url} key={menu.id} className="nav-link text-white">
                                     {menu.text}
                                 </Link>
                             </li>
