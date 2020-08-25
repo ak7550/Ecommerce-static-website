@@ -69,4 +69,11 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-
+/public/icons
+/src/images
+icons/
+images/
+contentFul/
+/src/images/contentFul
+*.png
+*.jpg
